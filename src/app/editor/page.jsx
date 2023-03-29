@@ -1,7 +1,9 @@
 "use client";
 import React, { useRef, useState } from "react";
 import axios from "axios";
-import JoditEditor from "jodit-react";
+
+import dynamic from "next/dynamic";
+const JoditEditor = dynamic(() => import("jodit-react"), { ssr: false });
 
 const Editor = () => {
   const editor = useRef(null);
@@ -12,14 +14,13 @@ const Editor = () => {
   const [content, setContent] = useState("");
 
   const handlePost = async () => {
-    const postBlog = await axios.post("/api/blog", {
+    await axios.post("/api/blog", {
       title: title.current.value,
       content: content,
       category: category.current.value,
       tags: tags.current.value.split(","),
       description: desc.current.value,
     });
-    console.log(postBlog);
   };
 
   return (
