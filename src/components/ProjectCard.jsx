@@ -21,9 +21,9 @@ const ProjectCard = ({ title, desc, url, image, reverse }) => {
       <div className="md:w-1/2 mt-8 md:mt-0 text-center md:text-left flex flex-col justify-end pb-6">
         <h5 className="font-semibold mb-8 text-sm">{title}</h5>
         <p className="text-gray-300 mb-4 leading-relaxed">{desc}</p>
-        <Link href={"#"} className="text-teal-300 cursor-pointer">
-          {url}
-        </Link>
+        <a href={url} target="_blank" className="text-teal-300 cursor-pointer">
+          {url.replace("https://", "")}
+        </a>
       </div>
     </div>
   );

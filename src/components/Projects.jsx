@@ -13,14 +13,14 @@ const Projects = () => {
           desc="This is a platform website for my college,Here we upload our class
           notes, assignments, and other stuffs.I build this website using the
           MERN stack &#40;ReactJs, ExpressJs, NodeJs, MongoDB&#41; and Firebase."
-          url="apniclass.live"
+          url="https://apniclass.live"
           reverse={false}
           image="ap.png"
         />
         <ProjectCard
           title="MADHAV MASAALA - ECOMMERCE"
           desc="An e-commerce site for a local shop of red chilli masala, I made this site for my client as a freelancer. I build this site using Nextjs, MongoDB & Stripe."
-          url="madhavmasaala.vercel.app"
+          url="https://madhavmasaala.vercel.app"
           reverse={true}
           image="mm.png"
         />
@@ -29,7 +29,7 @@ const Projects = () => {
           desc="I build a Stackoverflow clone website in a internship, additionally I integrated a chatbot that can answers all the programming questions and also build a social community page for StackOverflow users, there they can post images and videos."
           reverse={false}
           image="soc.png"
-          url="stackoverflow-clone-aaryan.vercel.app"
+          url="https://stackoverflow-clone-aaryan.vercel.app"
         />
       </div>
     </div>
