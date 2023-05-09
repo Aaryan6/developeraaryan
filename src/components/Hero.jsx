@@ -1,5 +1,6 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
+import "animate.css";
 
 export default function Header() {
   return (
@@ -7,8 +8,8 @@ export default function Header() {
       className="flex items-center justify-center min-h-screen w-full bg-[#03070F] text-gray-200"
       id="/"
     >
-      <div className="flex flex-col text-center md:pl-12">
-        <h1 className="text-4xl font-bold leading-normal md:text-6xl lg:text-8xl md:leading-none">
+      <div className="flex flex-col text-center md:pl-12 wow animate__animated animate__backInDown">
+        <h1 className="text-4xl font-medium leading-normal md:text-6xl lg:text-8xl md:leading-none">
           Hi!
           <br /> I am Aaryan Patel
         </h1>

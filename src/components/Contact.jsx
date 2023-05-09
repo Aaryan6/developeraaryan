@@ -1,10 +1,12 @@
+"use client";
 import React from "react";
+import "animate.css";
 
 const Contact = () => {
   return (
     <div
       id="contact"
-      className="text-slate-200 py-20 px-10 flex flex-col text-center"
+      className="text-slate-200 py-20 px-10 flex flex-col text-center wow animate__animated animate__bounceInUp"
     >
       <h3 className="font-semibold text-4xl">Get In Touch</h3>
       <p className="max-w-lg mx-auto mt-6">

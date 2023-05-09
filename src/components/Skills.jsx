@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import "animate.css";
 
 const Skills = () => {
   return (
@@ -7,7 +9,7 @@ const Skills = () => {
       <h3 className="font-semibold text-slate-200 uppercase text-xl tracking-wider text-center mb-8">
         Skills
       </h3>
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto">
+      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto wow animate__animated animate__fadeInUp">
         <Image
           src="/html.png"
           alt=""

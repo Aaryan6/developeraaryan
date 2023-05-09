@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
+import "animate.css";
 
 const SideIcons = () => {
   return (
-    <div className="fixed hidden lg:flex flex-col left-16 bottom-0 items-center z-30">
+    <div className="fixed hidden lg:flex flex-col left-16 bottom-0 items-center z-30 wow animate__animated animate__backInLeft">
       <div className="flex flex-col justify-between h-44 mb-10">
         <span>
           <a href="https://github.com/Aaryan6" target="_blank">

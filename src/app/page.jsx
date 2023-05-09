@@ -1,3 +1,4 @@
+"use client";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -7,6 +8,9 @@ import SideEmail from "@/components/SideEmail";
 import SideIcons from "@/components/SideIcons";
 import Skills from "@/components/Skills";
 import { Poppins } from "next/font/google";
+import { useEffect } from "react";
+const isServer = typeof window === "undefined";
+const WOW = !isServer ? require("wowjs") : null;
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,6 +18,9 @@ const poppins = Poppins({
 });
 
 export default function Home() {
+  useEffect(() => {
+    new WOW.WOW().init();
+  }, []);
   return (
     <main className={poppins.className}>
       <Header />
