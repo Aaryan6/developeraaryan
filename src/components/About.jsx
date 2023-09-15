@@ -1,13 +1,30 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import "animate.css";
+
+import { motion } from "framer-motion";
+
+const FadeInFromLeft = {
+  initial: { x: -300, opacity: 0 },
+  animate: { x: 0, opacity: 1 },
+};
+
+const FadeInFromRight = {
+  initial: { x: 300, opacity: 0 },
+  animate: { x: 0, opacity: 1 },
+};
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#0a0e17] text-white py-28 px-10">
+    <section id="about" className="bg-[#112739] text-white py-28 px-10">
       <div className="flex justify-between md:items-center flex-col-reverse md:flex-row max-w-4xl mx-auto">
-        <div className="md:w-1/2 max-w-lg mt-12 md:mt-0 wow animate__animated animate__fadeInLeftBig">
+        <motion.div
+          className="md:w-1/2 max-w-lg mt-12 md:mt-0"
+          variants={FadeInFromLeft}
+          initial="initial"
+          whileInView="animate"
+          transition={{ delay: 0.25 }}
+        >
           <p className="text-teal-300 font-medium text-lg">
             &gt;_ A BIT ABOUT ME
           </p>
@@ -21,21 +38,27 @@ const About = () => {
             develop and deploy web applications that are not only visually
             appealing but also highly functional.
           </p>
-        </div>
-        <div className="w-full md:w-96 max-auto relative wow animate__animated animate__fadeInRightBig">
+        </motion.div>
+        <motion.div
+          className="w-full md:w-96 max-auto relative group"
+          variants={FadeInFromRight}
+          initial="initial"
+          whileInView="animate"
+          transition={{ delay: 0.25 }}
+        >
           <div
-            className="absolute top-0 w-full border-2 border-[#65ffda] m-8"
+            className="absolute top-0 w-full group-hover:m-5 duration-300 border-2 border-[#65ffda] m-8"
             style={{ aspectRatio: "3/3.5" }}
           />
           <Image
             src="/profile.jpg"
-            className="w-full z-30 relative"
+            className="w-full z-30 relative group-hover:m-2 duration-300"
             alt=""
             width={1000}
             height={1000}
             style={{ aspectRatio: "3/3.5" }}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

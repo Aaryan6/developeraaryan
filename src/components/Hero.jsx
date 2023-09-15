@@ -1,14 +1,24 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
-import "animate.css";
+import { motion } from "framer-motion";
+
+const FadeIn = {
+  initial: { y: -100, opacity: 0 },
+  animate: { y: 0, opacity: 1 },
+};
 
 export default function Header() {
   return (
     <section
-      className="flex items-center justify-center min-h-screen w-full bg-[#03070F] text-gray-200"
+      className="flex items-center justify-center min-h-screen w-full bg-[#0b1a27] text-gray-200"
       id="/"
     >
-      <div className="flex flex-col text-center md:pl-12 wow animate__animated animate__backInDown">
+      <motion.div
+        className="flex flex-col text-center md:pl-12"
+        variants={FadeIn}
+        initial="initial"
+        whileInView="animate"
+      >
         <h1 className="text-4xl font-medium leading-normal md:text-6xl lg:text-8xl md:leading-none">
           Hi!
           <br /> I am Aaryan Patel
@@ -31,7 +41,7 @@ export default function Header() {
         >
           Let&apos;s Connect
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }

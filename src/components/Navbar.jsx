@@ -2,13 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { HiBars3BottomRight } from "react-icons/hi2";
 
 export default function Navbar() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [closeBar, setCloseBar] = useState(true);
   useEffect(() => {
-    console.log(scrollPosition);
     window.addEventListener("scroll", () => {
       setScrollPosition(window.pageYOffset);
     });

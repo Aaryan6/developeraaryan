@@ -1,11 +1,22 @@
 "use client";
 import React from "react";
 import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
-import "animate.css";
+import { motion } from "framer-motion";
+
+const FadeInFromLeft = {
+  initial: { x: -200, opacity: 0 },
+  animate: { x: 0, opacity: 1 },
+};
 
 const SideIcons = () => {
   return (
-    <div className="fixed hidden lg:flex flex-col left-16 bottom-0 items-center z-30 wow animate__animated animate__backInLeft">
+    <motion.div
+      className="fixed hidden lg:flex flex-col left-16 bottom-0 items-center z-30"
+      variants={FadeInFromLeft}
+      initial="initial"
+      animate="animate"
+      transition={{ delay: 0.25 }}
+    >
       <div className="flex flex-col justify-between h-44 mb-10">
         <span>
           <a href="https://github.com/Aaryan6" target="_blank">
@@ -29,7 +40,7 @@ const SideIcons = () => {
         </span>
       </div>
       <div className="w-0.5 h-24 bg-teal-300" />
-    </div>
+    </motion.div>
   );
 };
 
