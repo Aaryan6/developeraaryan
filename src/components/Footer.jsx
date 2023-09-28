@@ -3,7 +3,7 @@ import { FiGithub, FiLinkedin, FiInstagram, FiTwitter } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="text-slate-200 text-xs text-center py-4 bg-[#031729]">
+    <div className="text-slate-200 text-xs text-center py-4 bg-primary">
       <div className="flex justify-between mb-4 max-w-xs mx-auto px-6 lg:hidden">
         <span>
           <a href="https://github.com/Aaryan6" target="_blank">

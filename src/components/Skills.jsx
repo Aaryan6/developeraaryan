@@ -12,13 +12,13 @@ const FadeIn = {
 
 const Skills = () => {
   return (
-    <div className="px-4 py-16 bg-[#031729]">
+    <div className="px-4 py-16 bg-primary">
       <h3 className="font-semibold text-slate-200 uppercase text-xl tracking-wider text-center mb-8">
         Skills
       </h3>
       <div className="max-w-5xl mx-auto text-white flex flex-col md:flex-row items-center justify-evenly pt-6">
         <div className="rounded-lg w-full max-w-sm mb-8 md:mb-0">
-          <h2 className="text-lg font-medium text-center text-emerald-400 bg-[#162e44] py-2 rounded-md">
+          <h2 className="text-lg font-medium text-center text-lightdecorate bg-[#162e44] py-2 rounded-md">
             Full Stack
           </h2>
           <div className="grid grid-cols-2 gap-4 mt-5">
@@ -44,7 +44,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="w-full max-w-sm md:max-w-xs">
-          <h2 className="text-lg font-medium text-center text-emerald-400 bg-[#162e44] py-2 rounded-md">
+          <h2 className="text-lg font-medium text-center text-lightdecorate bg-[#162e44] py-2 rounded-md">
             Frameworks & Libraries
           </h2>
           <div className="grid grid-cols-2 gap-3 mt-5">

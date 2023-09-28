@@ -16,7 +16,7 @@ const FadeInFromRight = {
 
 const About = () => {
   return (
-    <section id="about" className="bg-[#112739] text-white py-28 px-10">
+    <section id="about" className="bg-secondary text-white py-28 px-10">
       <div className="flex justify-between md:items-center flex-col-reverse md:flex-row max-w-4xl mx-auto">
         <motion.div
           className="md:w-1/2 max-w-lg mt-12 md:mt-0"
@@ -25,12 +25,12 @@ const About = () => {
           whileInView="animate"
           transition={{ delay: 0.25 }}
         >
-          <p className="text-teal-300 font-medium text-lg">
+          <p className="text-lightdecorate font-medium text-lg">
             &gt;_ A BIT ABOUT ME
           </p>
           <p className="mt-6 leading-relaxed text-lg">
             I am Aaryan Patel, and I’m a{" "}
-            <span className="text-teal-300">Full Stack Developer</span> with a
+            <span className="text-lightdecorate">Full Stack Developer</span> with a
             passion for bringing ideas to life.
           </p>
           <p className="text-base mt-6 leading-relaxed">
@@ -40,14 +40,14 @@ const About = () => {
           </p>
         </motion.div>
         <motion.div
-          className="w-full md:w-96 max-auto relative group"
+          className="w-full md:w-96 max-w-md mx-auto lg:max-auto relative group"
           variants={FadeInFromRight}
           initial="initial"
           whileInView="animate"
           transition={{ delay: 0.25 }}
         >
           <div
-            className="absolute top-0 w-full group-hover:m-5 duration-300 border-2 border-[#65ffda] m-8"
+            className="absolute top-0 w-full group-hover:m-5 duration-300 border-2 border-lightdecorate m-8"
             style={{ aspectRatio: "3/3.5" }}
           />
           <Image

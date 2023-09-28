@@ -1,27 +1,15 @@
 export const projects = [
   {
+    title: "SITEBUILDERS - Template Site",
+    desc: "Design an agency website for impoving my web desgin skills, Actually just time paas.",
+    url: "https://sitebuilders.vercel.app",
+    image: "sitebuilders.png",
+  },
+  {
     title: "SANJIVANI TECHNO - WEB AGENCY",
     desc: "I made a web agency website that provides services like web development, app development and such more as a freelancer.",
-    url: "https://sanjivanitechno.vercel.app",
+    url: "https://sanjivani.vercel.app",
     image: "sanjivani.png",
-  },
-  {
-    title: "AyurvedaGPT",
-    desc: "AyurvedaGPT is an AI chatbot that gives answers based on Ayurveda data that is given as a pdf book of Ayurveda, build with OpenAI.",
-    url: "https://ayurbedagpt.vercel.app",
-    image: "ayurvedagpt.png",
-  },
-  {
-    title: "APNICLASS",
-    desc: "This is a platform website for my college,Here we upload our class notes, assignments, and other stuffs.I build this website using the MERN stack, ReactJs, ExpressJs, NodeJs, MongoDB&#41; and Firebase.",
-    url: "https://apniclass.live",
-    image: "ap.png",
-  },
-  {
-    title: "MADHAV MASAALA - ECOMMERCE",
-    desc: "An e-commerce site for a local shop of red chilli masala, I made this site for my client as a freelancer. I build this site using Nextjs, MongoDB & Stripe.",
-    url: "https://madhavmasaala.vercel.app",
-    image: "mm.png",
   },
   {
     title: "AGENCY WEBSITE - Landing Page",
@@ -30,8 +18,26 @@ export const projects = [
     image: "glint-clone.png",
   },
   {
+    title: "AyurvedaGPT",
+    desc: "AyurvedaGPT is an AI chatbot that gives answers based on Ayurveda data that is given as a pdf book of Ayurveda, build with OpenAI.",
+    url: "https://ayurbedagpt.vercel.app",
+    image: "ayurvedagpt.png",
+  },
+  {
+    title: "MADHAV MASAALA - ECOMMERCE",
+    desc: "An e-commerce site for a local shop of red chilli masala, I made this site for my client as a freelancer.",
+    url: "https://madhavmasaala.vercel.app",
+    image: "mm.png",
+  },
+  {
+    title: "APNICLASS",
+    desc: "This is a platform website for my college,Here we upload our class notes, assignments, and other stuffs.",
+    url: "https://apniclass.live",
+    image: "ap.png",
+  },
+  {
     title: "STACKOVERFLOW CLONE",
-    desc: "I build a Stackoverflow clone website during an internship, additionally I integrated a chatbot that can answers all the programming questions and also build a social community page for StackOverflow users, there they can post images and videos",
+    desc: "I build a Stackoverflow clone website during an internship, additionally I integrated a chatbot and a social community page for users where they can post images and videos.",
     url: "https://stackoverflow-clone-aaryan.vercel.app",
     image: "soc.png",
   },

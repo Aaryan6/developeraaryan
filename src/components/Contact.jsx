@@ -15,7 +15,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="text-slate-200 py-20 px-10 flex flex-col text-center bg-[#031729]"
+      className="text-slate-200 py-20 px-10 flex flex-col text-center bg-primary"
     >
       <motion.h3
         className="font-semibold text-4xl"

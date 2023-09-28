@@ -17,7 +17,7 @@ const FadeInFromRight = {
 const ProjectCard = ({ title, desc, url, image, reverse }) => {
   return (
     <div
-      className={`flex justify-between my-20 flex-col ${
+      className={`flex justify-between items-start my-20 flex-col ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
@@ -38,14 +38,14 @@ const ProjectCard = ({ title, desc, url, image, reverse }) => {
       </motion.div>
       <motion.div
         className={`md:w-1/2 mt-8 md:mt-0 text-center md:text-left flex flex-col justify-end pb-6`}
-        variants={reverse ? FadeInFromRight : FadeInFromLeft}
+        variants={!reverse ? FadeInFromRight : FadeInFromLeft}
         initial="initial"
         whileInView="animate"
         transition={{ delay: 0.25 }}
       >
         <h5 className="font-semibold mb-8 text-sm">{title}</h5>
         <p className="text-gray-300 mb-4 leading-relaxed">{desc}</p>
-        <a href={url} target="_blank" className="text-teal-300 cursor-pointer">
+        <a href={url} target="_blank" className="text-lightdecorate cursor-pointer">
           {url.replace("https://", "")}
         </a>
       </motion.div>

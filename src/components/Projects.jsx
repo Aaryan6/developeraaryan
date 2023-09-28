@@ -5,7 +5,7 @@ import { projects } from "@/data";
 const Projects = () => {
   const [bigView, setView] = useState(false);
   return (
-    <div id="projects" className="bg-[#112739] py-16 px-10 text-slate-200">
+    <div id="projects" className="bg-secondary py-16 px-10 text-slate-200">
       <h3 className="text-center font-semibold tracking-wider uppercase mb-8">
         Projects
       </h3>
